@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('./font/montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'amatic';
+    src: url('./font/amatic/AmaticSC-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: rgb(7,62,156);
+background: linear-gradient(90deg, rgba(7,62,156,1) 0%, rgba(254,65,163,1) 0%, rgba(143,65,167,1) 100%, rgba(143,65,167,1) 100%);
+
+}
+
+/*cabeçalho*/
+
+
+
+header .container {
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-family: 'Arial Black', Times;
+}
+
+header nav a:hover {
+    color: #6247aa;
+    transition: color 0.5s;
+}
+
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-size: small;
+    }
+
+    form h2 {
+        font-size: medium;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+

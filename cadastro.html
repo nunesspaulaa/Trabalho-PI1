@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+     <!--Cabeçalho-->
+     <header>
+        <div class="container">
+            <img src="img/versoGameFundo.png" alt="" width="300px">
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="jogos.html">Jogos</a>
+                <a href="cadastro.html" style="text-decoration: underline 2px rgb(255, 255, 255);">Cadastro</a>
+                <a href="#" aria-disabled="true" >Detonados</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Formulário de cadastro -->
+    <main> 
+        <form>
+            <h2>Faça seu cadastro para poder acessar nossos serviços!</h2>
+
+            <div class="controlador">
+                <input id="inputNome" type="text" placeholder="Nome" required>
+                <small>Preencha seu nome</small>
+            </div>
+
+			<div class="controlador">
+                <input id="inputSobrenome" type="text" placeholder="Sobrenome" required>
+                <small>Preencha seu sobrenome</small>
+            </div>
+
+            <div class="controlador">
+                <input id="inputEmail" type="email" placeholder="Email" required minlength="8">
+                <small>Preencha seu email</small>
+            </div>
+
+            <div class="controlador">  
+                <input id="inputSenha" type="password" placeholder="Senha" required minlength="8"> 
+                <small>Preencha sua senha</small>
+
+            </div>
+
+            <div class="controlador">
+                <input id="inputRepitaSenha" type="password" placeholder="Repita a senha" required minlength="8"> 
+                <small>As senhas digitadas não correspondem </small>
+            </div>
+
+            <div>
+                <select name="place">
+                    <option value="RS"> Rio Grande do sul </option>
+                    <option value="SC"> Santa Catarina </option>
+                    <option value="SP"> São Paulo </option>
+                    <option value="RJ"> Rio de Janeiro</option>
+                </select>
+            </div>
+
+			<input type="submit" value="INSCREVA-SE" id="botaoLogin" onclick="criarConta()">
+		</form>
+    </main>
+
+    <script src="cadastro.js"></script>
+
+    
+</body>
+</html>

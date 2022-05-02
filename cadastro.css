@@ -1,0 +1,56 @@
+
+
+/* body */
+
+form {
+    width: 60vw;
+    margin: 0 auto;
+    background-color: lightpink;
+    padding: 20px;
+}
+
+form h2 {
+    text-align: center;
+    color: white;
+    font-family: 'montserrat';
+    padding: 10px;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+	color: white;
+	background-color: rgb(254,65,163);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.controlador {
+    width: 100%;
+  }
+  
+  .controlador small {
+  
+    color: red;
+    display: none;
+    font-size: 12px;
+  }
+  
+  .controlador.erro input{
+  
+    border-color: red;
+    
+  }
+  
+  .controlador.erro small {
+  
+    display: block;
+  
+  }
+
